@@ -1,17 +1,22 @@
-const post = {
+const story = {
   _id: "s101",
   txt: "Best trip ever",
-  imgUrl: "http://some-img", //Can be an array if decide to support multiple imgs
+  imgUrl:
+   ["https://silentbeacon.com/wp-content/uploads/2020/08/Road-Trip-Safety-Tips-with-car-panic-button.jpg",
+   "https://merriam-webster.com/assets/ld/word_of_the_day/images/2262/large.jpg",
+   "https://st2.depositphotos.com/2931363/5383/i/450/depositphotos_53837931-stock-photo-people-enjoying-road-trip.jpg"
+  ], 
+//Can be an array if decide to support multiple imgs
   createdAt: 123543452,
   by: {
     _id: "u101",
-    "fullname": "Ulash Ulashi",
-    "imgUrl": "http://some-img"
+    fullname: "Ulash Ulashi",
+    imgUrl: "http://some-img"
   },
   loc: {
-    "lat": 11.11,
-    "lng": 22.22,
-    "name": "Tel Aviv"
+    lat: 11.11,
+    lng: 22.22,
+    name: "Tel Aviv"
   },
   comments: [
     {
@@ -52,9 +57,8 @@ const post = {
       imgUrl: "http://some-img"
     }
   ],
-  tags: ["fun", "kids"]
+  tags:["fun", "kids"]
 }
-
 const user = {
   "_id": "u101",
   "username": "Muko",

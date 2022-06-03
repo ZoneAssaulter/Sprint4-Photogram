@@ -10,7 +10,7 @@ export class AppHeader extends React.Component {
         <Link to='/'>
           <div className='logo'>Photogram</div>
         </Link>
-        <nav>
+        <nav className='nav'>
           <NavLink exact to='/'>
             Home
           </NavLink>
