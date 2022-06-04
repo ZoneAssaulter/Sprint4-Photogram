@@ -43,7 +43,7 @@ export class Timeline extends Component {
           return (
             <div className='post-container' key={post._id}>
               <div className='post-header'>
-                <img src={images[post.by.imgUrl]} alt='poster profile' />
+                <img src={post.by.imgUrl} alt='poster profile' />
                 <h2 className='poster-name'>{post.by.fullname}</h2>
               </div>
               <div className='post-content'>

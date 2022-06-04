@@ -17,15 +17,15 @@ let gPosts = [
   {
     _id: "s101",
     txt: "Best trip ever",
-    imgUrl: ["./assets/imgs/test-photos/road-trip1.jpg",
-      "./assets/imgs/test-photos/road-trip2.jpg",
-      "./assets/imgs/test-photos/road-trip3.jpg"
+    imgUrl: ["https://res.cloudinary.com/dwvtbmnak/image/upload/v1654368782/Photogram/road-trip1_d47zpr.jpg",
+      "https://res.cloudinary.com/dwvtbmnak/image/upload/v1654368781/Photogram/road-trip2_qdawyz.jpg",
+      "https://res.cloudinary.com/dwvtbmnak/image/upload/v1654368781/Photogram/road-trip3_y9oaom.webp"
     ], //Can be an array if decide to support multiple imgs
     createdAt: 123543452,
     by: {
       _id: "u101",
       fullname: "Ulash Ulashi",
-      imgUrl: "zero"
+      imgUrl: "https://res.cloudinary.com/dwvtbmnak/image/upload/v1654368781/Photogram/profile1_z2kqdq.avif"
     },
     loc: {
       lat: 11.11,
