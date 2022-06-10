@@ -2,5 +2,13 @@
 @import './base/base.scss';
 
 /* Home Page*/
+@import './page/home-page.scss';
 @import './cmp/header.scss';
 
+
+/* Posts */
+@import './cmp/post.scss';
+@import './cmp/make-post.scss';
+
+/* Suggestions */
+@import './cmp/suggestions.scss';

@@ -1,0 +1,26 @@
+.post-container{
+    width: 470px;
+    padding: 0;
+    margin-bottom: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    align-items: stretch;
+}
+
+.post-header{
+    display: flex;
+}
+
+.post-header img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.post-header .poster-name{
+    font-size: 14px;
+}
+
+.slick-arrow{
+    color: black;
+}

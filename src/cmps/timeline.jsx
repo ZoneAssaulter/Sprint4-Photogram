@@ -10,6 +10,17 @@ import { images } from '../data/image-Imports.js'
 import { postService } from '../services/post.service'
 import { userService } from '../services/user.service'
 
+function SliderArrow(props) {
+  const { className, style, onClick } = props
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', background: '#DADADA' }}
+      onClick={onClick}
+    />
+  )
+}
+
 export class Timeline extends Component {
   state = {
     posts: [],
@@ -19,6 +30,8 @@ export class Timeline extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      nextArrow: <SliderArrow />,
+      prevArrow: <SliderArrow />
     },
   }
 
@@ -50,9 +63,10 @@ export class Timeline extends Component {
                 <Slider {...settings}>
                   {post.imgUrl.map((imgSrc) => {
                     return (
-                      <div>
-                        <img src={imgSrc} alt='' />
-                      </div>
+                      <img src={imgSrc} alt='' />
+                      // <div>
+                      //   <img src={imgSrc} alt='' />
+                      // </div>
                     )
                   })}
                 </Slider>

@@ -5,13 +5,14 @@ import routes from './routes.js'
 
 import { HomePage } from './pages/home-page'
 import { AppHeader } from './cmps/app-header'
+import { MakePost } from './cmps/make-post.jsx'
 
 export function App() {
   return (
     <section className='app'>
       <Router>
         <AppHeader />
-        
+        <MakePost isPostingOn = "false"/>
 
         <main>
           <Routes>

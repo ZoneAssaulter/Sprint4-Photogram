@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { Timeline } from '../cmps/timeline'
+import { Suggestions } from '../cmps/suggestions'
 
 export class HomePage extends Component {
   state = {
@@ -8,8 +9,9 @@ export class HomePage extends Component {
 
   render() {
     return (
-      <section>
+      <section className='home-page'>
         <Timeline />
+        <Suggestions />
       </section>
     )
   }
